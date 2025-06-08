@@ -5,7 +5,14 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+   const MyComponent = () => {
+    return(
+      <div>
+        <h2>My Component</h2>
+        <p>This is a simple component.</p>
+      </div>
+    );
+   }
   return (
     <>
       <div>
@@ -16,7 +23,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello World and Me</h1>
+      <MyComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
